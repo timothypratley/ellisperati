@@ -1,0 +1,26 @@
+/* disables back/forward gestures */
+html, body {
+  overscroll-behavior-x: none;
+}
+
+html *,
+svg *,
+.md,
+.ui.modal .header,
+.ui.message .header,
+.ui.header,
+.ui.button,
+.header,
+.textarea,
+.input {
+    font-family: 'Baloo 2',Ubuntu,Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    overflow-wrap: break-word;
+}
+
+code, .md code {
+    font-family: monospace;
+}
+
+mjx-container.MathJax {
+    margin: 0 !important;
+}

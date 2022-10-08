@@ -1,0 +1,17 @@
+node_modules
+target/
+.cljs_node_repl/
+.cpcache/
+.cache
+.idea/
+.vscode/
+.calva/
+.lsp/
+pom.xml
+*.jar
+*.log
+.lein-deps-sum
+.lein-repl-history
+.repl
+.nrepl-port
+.rebel_readline_history

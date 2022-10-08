@@ -1,0 +1,24 @@
+^{:open-url   false}
+{:main            ellisperati.main
+ :infer-externs   true
+ ;; If stuck on an advanced compile name
+ ;;:pseudo-names true
+ ;;:pretty-print true
+ :output-to       "./target/public/cljs-out/webapp/main.js"
+ :output-dir      "target/public/cljs-out/webapp"
+ :target          :bundle
+ :browser-repl    false
+ :bundle-cmd      {:none    ["npx" "webpack"
+                             "--mode=development"
+                             "--devtool" "inline-source-map"
+                             "--entry" "./target/public/cljs-out/webapp/main.js"
+                             "--output-path" "target/public/cljs-out/webapp"
+                             "--output-filename" "main_bundle.js"]
+                   :default ["npx" "webpack"
+                             "--mode=production"
+                             "--devtool" "source-map"
+                             "--entry" "./target/public/cljs-out/webapp/main.js"
+                             "--output-path" "target/public/cljs-out/webapp"
+                             "--output-filename" "main_bundle.js"]}
+ :language-out    :ecmascript-next
+ :closure-defines {cljs.core/*global* "window"}}
